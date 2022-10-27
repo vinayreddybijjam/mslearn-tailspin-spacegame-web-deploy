@@ -94,7 +94,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      name: 'MYAgentPool'
+      name: 'MyAgentPool'
     environment: test
     variables:
     - group: 'Release'
@@ -145,4 +145,3 @@ stages:
               sourceSlot: 'swap'
               targetSlot: 'production'
               action: 'Swap Slots'
-              
